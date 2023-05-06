@@ -1,0 +1,42 @@
+let mapleader = " "
+
+"" General Settings
+set scrolloff=3
+set incsearch
+set hlsearch
+set argtextobj
+set surround
+set relativenumber number
+set clipboard+=unnamed
+set showcmd
+set ignorecase smartcase
+set nooldundo
+set ideajoin
+
+"" Plugins
+Plug 'preservim/nerdtree'
+let g:NERDTreeMapPreview='l'
+let g:NERDTreeMapJumpParent='h'
+let g:NERDTreeMapQuit='<leader>e'
+Plug 'machakann/vim-highlightedyank'
+let g:highlightedyank_highlight_color = "rgba(255, 250, 160, 100)"
+let g:highlightedyank_highlight_duration = "1000"
+packadd matchit
+set keep-english-in-normal
+
+"" Keymappings
+imap jk <Esc>
+map S :action AceDeclarationAction<CR>
+map s :action AceAction<CR>
+nmap <leader>r :action ReformatCode<CR>
+nmap <leader>a :action Annotate<CR>
+nmap <leader>h :action PreviousTab<CR>
+nmap <leader>l :action NextTab<CR>
+nmap <leader>z3 :action ExpandAllToLevel3<CR>
+nmap <leader>b :action Switcher<CR>
+nmap <leader>/ :action FindInPath<CR>
+nmap <leader><space> :action GotoFile<CR>
+nmap <leader>e :NERDTree<CR>
+nmap <leader>sa :action SaveAll<CR>
+nmap <leader>si :source ~/.ideavimrc<CR>
+
