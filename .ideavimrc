@@ -26,6 +26,7 @@ set keep-english-in-normal
 
 "" Keymappings
 imap jk <Esc>
+imap <C-g> <Esc>
 map S :action AceDeclarationAction<CR>
 map s :action AceAction<CR>
 nmap <leader>r :action ReformatCode<CR>
